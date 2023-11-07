@@ -50,7 +50,7 @@ jobs:
     # install linux dependencies
     - name: Install Linux dependencies
       if: matrix.os == 'ubuntu-latest'
-      run: sudo apt install -y libsdl2-dev
+      run: sudo apt install -y libsdl2-dev libsdl2-mixer-dev
 
     - name: Set reusable strings
       # Turn repeated input strings (such as the build output directory) into step outputs. These step outputs can be used throughout the workflow file.
